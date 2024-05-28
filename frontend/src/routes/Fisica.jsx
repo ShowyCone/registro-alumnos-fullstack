@@ -13,7 +13,7 @@ const Fisica = () => {
     setLoad(true)
     axios
       .get(
-        `http://localhost:3000/api/estudiantes/year/${yearSelected}/materia/4`
+        `https://registro-alumnos-fullstack.onrender.com/api/estudiantes/year/${yearSelected}/materia/4`
       )
       .then((response) => {
         setItems(response.data)

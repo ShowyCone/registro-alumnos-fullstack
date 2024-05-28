@@ -13,7 +13,7 @@ const Castellano = () => {
     setLoad(true)
     axios
       .get(
-        `http://localhost:3000/api/estudiantes/year/${yearSelected}/materia/3`
+        `https://registro-alumnos-fullstack.onrender.com/api/estudiantes/year/${yearSelected}/materia/3`
       )
       .then((response) => {
         setItems(response.data)

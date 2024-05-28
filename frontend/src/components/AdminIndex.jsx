@@ -11,7 +11,7 @@ const AdminIndex = () => {
   useEffect(() => {
     setIsLoading(true)
     axios
-      .get('http://localhost:3000/api/a%C3%B1os/')
+      .get('https://registro-alumnos-fullstack.onrender.com/api/a%C3%B1os/')
       .then((response) => {
         setYears(response.data)
         setIsLoading(false)

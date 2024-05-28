@@ -64,7 +64,7 @@ const Chat = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:3000/api/estudiante/${allData[0].id_estudiante}/materia/${materiaSelected}`
+        `https://registro-alumnos-fullstack.onrender.com/api/estudiante/${allData[0].id_estudiante}/materia/${materiaSelected}`
       )
       .then((response) => {
         if (response.data.length === 0) {

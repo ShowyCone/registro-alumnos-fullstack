@@ -82,14 +82,18 @@ const DataTable = ({ rows }) => {
           const id = newRow.id
           console.log(`ID de la fila: ${id}`)
           axios
-            .put('http://localhost:3000/api/estudiante-notas/' + id, {
-              nombre: newRow.nombre,
-              apellido: newRow.apellido,
-              cedula: newRow.cedula,
-              nota1: parseInt(newRow.nota1),
-              nota2: parseInt(newRow.nota2),
-              nota3: parseInt(newRow.nota3),
-            })
+            .put(
+              'https://registro-alumnos-fullstack.onrender.com/api/estudiante-notas/' +
+                id,
+              {
+                nombre: newRow.nombre,
+                apellido: newRow.apellido,
+                cedula: newRow.cedula,
+                nota1: parseInt(newRow.nota1),
+                nota2: parseInt(newRow.nota2),
+                nota3: parseInt(newRow.nota3),
+              }
+            )
             .then((response) => {
               console.log(response.data)
             })

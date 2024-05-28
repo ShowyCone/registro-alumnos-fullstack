@@ -26,7 +26,10 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
-      .post('http://localhost:3000/api/estudiantes/', formData)
+      .post(
+        'https://registro-alumnos-fullstack.onrender.com/api/estudiantes/',
+        formData
+      )
       .then((response) => {
         console.log('Ítem creado con éxito:', response.data)
 

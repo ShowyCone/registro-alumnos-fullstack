@@ -35,7 +35,7 @@ const Login = () => {
 
   const getData = (id) => {
     axios
-      .get(`http://localhost:3000/api/notas/${id}`)
+      .get(`https://registro-alumnos-fullstack.onrender.com/api/notas/${id}`)
       .then((response) => {
         if (response.data[0]) {
           setAllData([...response.data])
@@ -52,7 +52,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault()
     axios
-      .get('http://localhost:3000/api/estudiantes/')
+      .get('https://registro-alumnos-fullstack.onrender.com/api/estudiantes/')
       .then((response) => {
         const user = response.data.find(
           (i) => i.cedula === cedula && i.contraseña === contraseña

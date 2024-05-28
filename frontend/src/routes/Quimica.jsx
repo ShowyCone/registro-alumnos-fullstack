@@ -14,7 +14,7 @@ const Quimica = () => {
     if (yearSelected)
       axios
         .get(
-          `http://localhost:3000/api/estudiantes/year/${yearSelected}/materia/1`
+          `https://registro-alumnos-fullstack.onrender.com/api/estudiantes/year/${yearSelected}/materia/1`
         )
         .then((response) => {
           setItems(response.data)
