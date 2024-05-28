@@ -1,0 +1,57 @@
+.navbar-vertical {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  background-color: #095691;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-vertical ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-materias {
+}
+
+.navbar-vertical a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+
+/* Estilos para el enlace activo */
+.navbar-vertical a.active {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+}
+
+.navlink {
+  background-color: transparent;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.nav-materias {
+  padding: 15px;
+}
+
+.icons {
+  font-size: 1.5em;
+}
